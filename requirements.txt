@@ -4,5 +4,7 @@ tswift
 youtube-search-python
 aiohttp
 requests
-Gitpython
-Selenium
+gitpython==3.1.11
+selenium
+heroku3
+
