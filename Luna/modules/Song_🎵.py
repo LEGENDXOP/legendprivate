@@ -25,7 +25,9 @@ from tswift import Song
 
 
 
-
+@register(pattern="^/sping")
+async def sping(event):
+   await event.reply("Song Modules Active..")
 
 
 JULIASONG = "@MissJuliaRobotMP3"
