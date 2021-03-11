@@ -135,20 +135,20 @@ def load_module(shortname):
         pass
     elif shortname.endswith("_"):
         import importlib
-        import julia.events
+        import Luna.events
 
-        path = Path(f"julia/modules/{shortname}.py")
-        name = "julia.modules.{}".format(shortname)
+        path = Path(f"Luna/modules/{shortname}.py")
+        name = "Luna.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Successfully imported " + shortname)
     else:
         import importlib
-        import julia.events
+        import Luna.events
 
-        path = Path(f"julia/modules/{shortname}.py")
-        name = "julia.modules.{}".format(shortname)
+        path = Path(f"Luna/modules/{shortname}.py")
+        name = "Luna.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.register = register
@@ -156,7 +156,7 @@ def load_module(shortname):
         mod.tbot = tbot
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
-        sys.modules["julia.modules." + shortname] = mod
+        sys.modules["Luna.modules." + shortname] = mod
         print("Successfully imported " + shortname)
 
 
