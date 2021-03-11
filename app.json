@@ -1,10 +1,7 @@
 {
-  "name": "MissJuliaRobot",
-  "description": "A Telegram Group Management Bot",
-  "logo": "https://telegra.ph/file/517f97b74ad036b2ef3c9.jpg",
+  "name": "private",
+  "description": "A Telegram private Bot",
   "keywords": ["telethon", "sqlalchemy", "mongodb"],
-  "repository": "https://github.com/MissJuliaRobot/MissJuliaRobot.git",
-  "success_url": "http://missjuliarobot.unaux.com",
   "env": {
     "API_KEY": {
       "description": "Get this value from my.telegram.org! Please do not steal",
