@@ -1,15 +1,15 @@
 from sys import argv, exit
-from LEGENDX import tbot
+from LEGENDX import bot
 from LEGENDX import TOKEN
 import LEGENDX.events
 
 try:
-    tbot.start(bot_token=TOKEN)
+    bot.start(bot_token=TOKEN)
 except Exception:
     print("Network Error !")
     exit(1)
 
 if len(argv) not in (1, 3, 4):
-    tbot.disconnect()
+    bot.disconnect()
 else:
-    tbot.run_until_disconnected()
+    bot.run_until_disconnected()
