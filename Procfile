@@ -1,1 +1,1 @@
-worker: python3 -m Luna
+worker: python3 -m LEGENDX
