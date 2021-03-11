@@ -1,0 +1,6 @@
+telethon
+youtube_dl
+tswift
+youtube-search-python
+aiohttp
+requests
